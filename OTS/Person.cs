@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Collections;
+//using System.Collections;
+using System.Collections.Generic;
 
 namespace OTS
 {
@@ -32,6 +33,7 @@ namespace OTS
 			{
 				myStack.Push( acquaintance );
 			}
+			Console.WriteLine (myStack.Count);
 
 			do
 			{
@@ -47,7 +49,7 @@ namespace OTS
 					myStack.Push( acquaintance );
 				}
 
-			} while ( myStack.Count >= 0 );
+			} while ( myStack.Count > 0 );
 
 			return false;
 		}
